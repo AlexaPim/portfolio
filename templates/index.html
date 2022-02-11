@@ -354,12 +354,12 @@
                                             <p class="card-text">Projeto Integrador baseado na ODS 16 da ONU (Paz,
                                                 Justiça e Instituições Eficazes). Rede Social de busca de emprego, para
                                                 mulheres em situação de vulnerabilidade social.</p>
-                                                <div class="d-flex justify-content-center">
-                                                    <a href="https://github.com/AlexaPim/frontend-Carol" target="_blank" class="btn btn-outline-dark me-3"><i
-                                                            class="bi bi-github"></i></a>
-                                                    <a href="https://proj-carol.netlify.app/#/home" target="_blank" class="btn btn-outline-primary"><i
-                                                            class="bi bi-link-45deg"></i></a>
-                                                </div>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://github.com/AlexaPim/frontend-Carol" target="_blank"
+                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                                <a href="https://proj-carol.netlify.app/#/home" target="_blank"
+                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -371,10 +371,10 @@
                                             <h5 class="card-title">Landing Page - Blackpink</h5>
                                             <p class="card-text">Página criada com HTML e bootstrap.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/AlexaPim/bp-bootstrap" target="_blank" class="btn btn-outline-dark me-3"><i
-                                                        class="bi bi-github"></i></a>
-                                                <a href="alexapim.github.io/bp-bootstrap/" target="_blank" class="btn btn-outline-primary"><i
-                                                        class="bi bi-link-45deg"></i></a>
+                                                <a href="https://github.com/AlexaPim/bp-bootstrap" target="_blank"
+                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                                <a href="alexapim.github.io/bp-bootstrap/" target="_blank"
+                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -387,10 +387,10 @@
                                             <h5 class="card-title">Landing Page - BTS</h5>
                                             <p class="card-text">Página criada com HTML e bootstrap.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/AlexaPim/bootstrap" target="_blank" class="btn btn-outline-dark me-3"><i
-                                                        class="bi bi-github"></i></a>
-                                                <a href="alexapim.github.io/bootstrap/" target="_blank" class="btn btn-outline-primary"><i
-                                                        class="bi bi-link-45deg"></i></a>
+                                                <a href="https://github.com/AlexaPim/bootstrap" target="_blank"
+                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                                <a href="alexapim.github.io/bootstrap/" target="_blank"
+                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -410,10 +410,10 @@
                                             <p class="card-text">Projeto criado durante a formação de Iniciante em
                                                 Desenvolvimento Web na Fly Educação.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/AlexaPim/acolhe-elas" target='_blank' class="btn btn-outline-dark me-3"><i
-                                                        class="bi bi-github"></i></a>
-                                                <a href="alexapim.github.io/acolhe-elas/" target='_blank' class="btn btn-outline-primary"><i
-                                                        class="bi bi-link-45deg"></i></a>
+                                                <a href="https://github.com/AlexaPim/acolhe-elas" target='_blank'
+                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                                <a href="alexapim.github.io/acolhe-elas/" target='_blank'
+                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
                                             </div>
 
                                         </div>
@@ -450,6 +450,53 @@
 
         <!-- Contato -->
         <section id="contato">
+
+            <div class="container mb-5">
+                <h2 class="pt-3 pb-3">Contato</h2>
+
+                <div class="row">
+
+                    <div class="col-md-12 mt-5 mt-md-0">
+                        <div class="card p-5 h-100 shadow border-0" data-anime="left">
+
+                            <form class="row g-3" action='/send' method="POST">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">Nome:</label>
+                                    <input type="text" class="form-control" id="nome" name='nome'
+                                        placeholder='Digite seu nome' required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" name='email'
+                                        placeholder='Digite seu email' required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="mensagem" class="form-label">Mensagem:</label>
+                                    <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
+                                        placeholder="Digite sua mensagem" required></textarea>
+                                </div>
+
+
+                                <div class="col-12 d-flex justify-content-center mt-4">
+                                    <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
+                                        mensagem</button>
+
+                                    <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Enviando...
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
 
         </section>
         <!-- /Contato -->
