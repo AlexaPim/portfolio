@@ -58,7 +58,7 @@ html, body {
 .nav-menu a, .nav-menu a:focus {
     display: flex;
     align-items: center;
-    color: rgb(139, 131, 131);
+    color: #4d067c;
     transition: 0.3s;
     font-size: 15px;
     font-weight: bold;
@@ -67,7 +67,7 @@ html, body {
 .nav-menu a i, .nav-menu a:focus i {
     font-size: 24px;
     padding-right: 0.8rem;
-    color: #5a189a;
+    color: #2f0436;
 }
 
 .nav-menu a:hover,
@@ -124,6 +124,10 @@ section#inicio div#arraste {
 section#inicio div#arraste a {
     text-decoration: none;
     color: #ffff;
+}
+
+.bg-habilidade {
+    background: #2f0436;
 }
 
 i.menu-mobile {
@@ -188,13 +192,13 @@ i.menu-mobile {
 }
 
 .section-bg {
-    background-color: #eff5ff;
+    background-color: #f8ccef;
 }
 
 .gradient-custom {
     background: #f72585;
-    background: -webkit-linear-gradient(#5a189a, #f72585);
-    background: linear-gradient(#5a189a, #f72585);
+    background: -webkit-linear-gradient(#a22fb6, #fa5da4);
+    background: linear-gradient(#a22fb6, #fa5da4);
 }
 
 .cv .cv-titulo {
@@ -265,3 +269,23 @@ i.menu-mobile {
 
 }
 
+#footer {
+    padding: 15px;
+    color: #ffff;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    background-color: linear-gradient( #fa5da4, #a22fb6);
+    transform: .3s;
+}
+
+@media (max-width: 1012px) {
+    #footer{
+        position: static;
+        width: auto;
+        padding: 20px 15px;
+    }
+}
