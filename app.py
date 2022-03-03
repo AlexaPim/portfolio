@@ -1,5 +1,8 @@
 from distutils.log import debug
 from flask import Flask, render_template, redirect
+from dotenv import load_dotenv
+import os 
+load_dotenv()
 
 app = Flask(__name__)
 
